@@ -4,7 +4,7 @@ import lombok.Getter;
 
 public enum Endpoints {
 
-    ALERT("/alert"),
+    ALERT("/alerts"),
     FRAMES("/frames");
 
     @Getter

@@ -25,7 +25,7 @@ public class ConfigReader {
         }
     }
     public static String getValue(String key){
-        return properties.getProperty(key).trim(); //properties мнодественное число а getProparty  у нас выводит одно значение с множественного Properties
+        return properties.getProperty(key); //properties мнодественное число а getProparty  у нас выводит одно значение с множественного Properties
         //key это у нас значение которые указанные в  app.proparties browse,username ,password  и т д.
         // trim нам нужен для того чтобы , если мы добавили в наш proparties в значение какитео пробелы она удалит нам пробелы
 

@@ -22,9 +22,10 @@ public class ChromeWebDriver {
             options.addArguments("--headless");
         }
 
-        WebDriver driver= new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        WebDriver driver= new ChromeDriver(options);
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
         return driver;
     }
 }

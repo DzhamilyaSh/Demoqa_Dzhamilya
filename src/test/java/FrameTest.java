@@ -7,7 +7,7 @@ public class FrameTest extends BaseTest{
 
     @Test(description = "Verify that driver can switch to another frame")
     public void doubleClickTest() {
-        browserHelper.open(ConfigReader.getValue("baseURL" + Endpoints.FRAMES.getEndpoint()));
+        browserHelper.open(ConfigReader.getValue("baseURL") + Endpoints.FRAMES.getEndpoint());
         iframeHelper.switchToFrame("frame1");
         System.out.println(driver.findElement(By.id("sampleHeading")));
         iframeHelper.switchToParentFrame();

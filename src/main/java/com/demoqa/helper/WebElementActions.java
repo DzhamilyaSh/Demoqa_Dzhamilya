@@ -31,7 +31,8 @@ public class WebElementActions {
     public WebElementActions click(WebElement element){
         waitElementToBeClickAble(element);
         scrollToElement(element);
-        element.click();
+//        element.click();
+        jsClick(element);
         return this;
 
     }

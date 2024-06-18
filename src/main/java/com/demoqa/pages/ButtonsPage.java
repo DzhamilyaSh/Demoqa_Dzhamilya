@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class ButtonsPage extends BasePage{
 
-    @FindBy(id = "doubleClickBtn2")
+    @FindBy(id = "doubleClickBtn")
     public WebElement doubleClickBtn;
 
     @FindBy(id = "doubleClickMessage")
