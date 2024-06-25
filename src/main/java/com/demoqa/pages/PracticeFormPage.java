@@ -58,7 +58,7 @@ public class PracticeFormPage extends BasePage {
     @FindBy(xpath = "//*[@id=\"state\"]/div/div[2]")
     public WebElement cityInput;
 
-    @FindBy(xpath = "//[@id=\"stateCity-wrapper\"]/div[3]")//[@id="stateCity-wrapper"]/div[3]
+    @FindBy(xpath = "//[@id=\"//*[@id='stateCity-wrapper']/div[3]")//[@id="stateCity-wrapper"]/div[3]
     public WebElement cityInput1;
 
     @FindBy(id = "submit")
