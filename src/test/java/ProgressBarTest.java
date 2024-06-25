@@ -1,7 +1,7 @@
 import org.testng.annotations.Test;
 
 public class ProgressBarTest extends BaseTest {
-    @Test
+    @Test(groups = {"Smoke", "322"})
     public void progressTest() {
         // Открываем веб-страницу с прогресс-баром
         browserHelper.open("https://demoqa.com/progress-bar");

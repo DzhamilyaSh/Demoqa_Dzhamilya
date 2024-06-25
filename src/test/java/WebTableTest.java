@@ -5,7 +5,7 @@ import java.util.List;
 
 public class WebTableTest extends BaseTest{
 
-    @Test(description = "Practice form test")
+    @Test(groups = {"Smoke", "323"}, description = "Practice form test")
     public void test123(){
         driver.get("https://demoqa.com/webtables");
         demoQAPages.getWebTablePage().addNewEmployee(randomUtils.creatMocEmployee());

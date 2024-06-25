@@ -2,7 +2,7 @@ import org.testng.annotations.Test;
 
 public class ButtonsTest extends BaseTest{
 
-    @Test(description = "Verify double click button is working propertly")
+    @Test(groups = {"Regression", "123"}, description = "Verify double click button is working propertly")
     public void doubleClickTest(){
         browserHelper.open("https://demoqa.com/buttons");
         webElementActions.doubleClick(demoQAPages.getButtonsPage().doubleClickBtn);
